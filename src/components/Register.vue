@@ -52,7 +52,7 @@ export default {
                 stdclass:this.stdclass
             }
             try{
-                let result = await axios.post('http://localhost:5000/student/register',data)
+                let result = await axios.post('http://13.229.215.235:8081/student/register',data)
                 if(result.data.error){
                     this.error = result.data.error
                     swal({title: this.error,text: "ลองใหม่อีกครั้ง", icon: "error",button: "OK",})

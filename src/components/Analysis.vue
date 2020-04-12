@@ -72,7 +72,7 @@ export default {
     },
     "$route.query.type": _.debounce(function() {
       axios
-        .post("http://localhost:5000/showamal", this.$route.query)
+        .post("http://13.229.215.235:8081/showamal", this.$route.query)
         .then(r => {
           if(r.data.error){
             this.error = r.data.error

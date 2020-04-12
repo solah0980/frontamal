@@ -44,7 +44,7 @@ export default {
                password:this.password
            }
                try{
-               axios.post(`http://localhost:5000/login`,user).then((result)=>{
+               axios.post(`http://13.229.215.235:8081/login`,user).then((result)=>{
                 if(result.data.error){
                     this.error=result.data.error
                     swal({title: this.error,text: "ลองใหม่อีกครั้ง", icon: "error",button: "OK",})
@@ -115,9 +115,9 @@ export default {
   transition: 0.5;
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 560px){
     .login-form{
-        width: 370px;
+        width: 100% !important;
         margin: 0 auto;
     }
     .headText{

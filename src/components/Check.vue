@@ -294,7 +294,7 @@ export default {
                 ebadat:this.ebadat
             }
             try{
-                axios.post('http://localhost:5000/myamal',data).then((result)=>{
+                axios.post('http://13.229.215.235:8081/myamal',data).then((result)=>{
                      swal({title: "บันทึกสำเร็จ",icon: "success",button: "OK",}).then((r)=>{
                         this.$router.push({
                             name:'index'
